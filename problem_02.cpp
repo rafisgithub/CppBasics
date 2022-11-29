@@ -4,7 +4,7 @@ using namespace std;
 int main(){
 	int x=1,y=2;
 	if(--x==0 && ++y==3){//both condition should be true.
-		if(x++==0 && y--==3){
+		if(x++==0 || y--==3){//if one is true another will be not exicuted
 			cout<<"True.\n";
 			cout<<x<<" "<<y<<endl;
 		}
